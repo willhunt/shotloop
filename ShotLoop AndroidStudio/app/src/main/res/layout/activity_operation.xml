@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="0dp"
+    tools:context="com.billyhunt.shotloop.operationActivity" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:adjustViewBounds="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_Silvia_Top"
+        android:src="@drawable/silvia_illustration_top_off"
+        android:contentDescription="@string/silvia_illustration_top"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentBottom="true"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/imageView_Silvia_Top" >
+        <Button
+            android:id="@+id/button_disconnect"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="@string/button_disconnect"
+            android:textSize="14sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:onClick="disconnectWiFi"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <Button
+            android:id="@+id/button_onoff"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="@string/button_on"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            android:onClick="toggleWiFi"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/temp_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/temperature_name"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button_tempRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_temp"
+        android:textSize="14sp"
+        android:layout_marginTop="40dp"
+        android:onClick="requestTemp"
+        android:layout_alignTop="@+id/temp_display"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp" />
+
+
+</RelativeLayout>

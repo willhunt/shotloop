@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.billyhunt.shotloop.homeActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/imageView_Silvia"
+        android:src="@drawable/silvia_illustration"
+        android:contentDescription="@string/silvia_illustration"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:id="@+id/button_connect"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_weight="0"
+        android:text="@string/button_connect"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:onClick="connectWiFi" />
+
+</LinearLayout>
+
+

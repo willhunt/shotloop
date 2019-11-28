@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Details about machine for general display -->
+   <PreferenceCategory
+       android:title="@string/pref_machine_details"
+       android:key="pref_machine_details">
+       <EditTextPreference
+           android:key="pref_machine_name"
+           android:title="@string/pref_machine_name"
+           android:summary="@string/pref_machine_name_summary" />
+   </PreferenceCategory>
+
+    <!-- Wireless connection info -->
+   <PreferenceCategory
+       android:title="@string/pref_machine_connection"
+       android:key="pref_machine_connection">
+       <EditTextPreference
+           android:key="pref_machine_IP"
+           android:title="@string/pref_machine_IP"
+           android:summary="@string/pref_machine_IP_summary" />
+       <EditTextPreference
+           android:key="pref_machine_port"
+           android:title="@string/pref_machine_port"
+           android:summary="@string/pref_machine_port_summary"
+           android:defaultValue="80"/>
+   </PreferenceCategory>
+
+</PreferenceScreen>

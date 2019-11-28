@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Shot Loop</string>
+
+    <!-- Action (menu item) strings -->
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+
+    <!-- Home page -->
+    <string name="home_machine_name">Espresso Machine</string>
+    <string name="silvia_illustration">Rancilio Silvia</string>
+    <string name="button_connect">Connect</string>
+
+    <!-- Operation page -->
+    <string name="silvia_illustration_top">Rancilio Silvia Top</string>
+    <string name="temperature_name">No temperature reading</string>
+    <string name="button_disconnect">Disconnect</string>
+    <string name="button_on">Turn On</string>
+    <string name="button_off">Turn Off</string>
+    <string name="button_temp">Update Temperature</string>
+
+     <!-- Settings activity -->
+    <string name="title_activity_settings">Settings</string>
+    <!--Settings fragment -->
+    <string name="title_activity_preferences">Preferences</string>
+    <!-- Preferences -->
+    <string name="pref_machine_details">Machine Details</string>
+    <string name="pref_machine_name">Machine Name</string>
+    <string name="pref_machine_name_summary">Name of espresso machine</string>
+    <string name="pref_machine_connection">Wireless Connection</string>
+    <string name="pref_machine_IP">Machine IP Address</string>
+    <string name="pref_machine_IP_summary">IP address of espresso machine</string>
+    <string name="pref_machine_port">Port</string>
+    <string name="pref_machine_port_summary">WiFi port number</string>
+
+
+    <!-- About Page -->
+    <string name="title_activity_about">About</string>
+    <string name="my_name">Billy Hunt</string>
+    <string name="about_appDetails">This app interfaces with an Arduino controlled espresso machine\n\n
+                                    The arduino code based upon BarebonesPIDForEspresso (Tim Herzel 2008)
+                                    controls the boiler temperature with a PID feedback loop\n\n
+                                    The app is used to:\n
+                                    \t\t- Set the temperature\n
+                                    \t\t- Display the temperature\n
+                                    \t\t- Change the control gains\n
+                                    \t\t- Turn the machine on remotely\n
+                                    </string>
+    <string name="title_activity_operation">operationActivity</string>
+    <string name="hello_world">Hello world!</string>
+
+
+
+
+</resources>
